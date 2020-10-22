@@ -1,12 +1,25 @@
 # OSCP-PWK-Prep-Resources-
-UPDATE 06/01/2020: Hey there friends, I have been very quiet on here, I was surprised to see more people have starred this "guide" more than I expected, so I am glad this provides some use to folks. I do plan on being more active now on here now as I start my OSCP jouney once again. Unfortunately I underestimated the depth of the course and so pretty much found myself struggling in the labs =(. During my time away I have been doing some background studying but not as focused as I want to be before signing up for the lab again. My goal was to actually start again this summer but 2 things occured, Offsec updated the labs and now if I want the updated material AND additional lab time I am looking at spending $999 so I have some $$$ to save. The 2nd delay is because of covid-19, I am blessed to still be working currently but we have idea if things will take a turn so for now I am holding on tight to my purse strings lol. Once I have a better cushion for myself I will feel comfortable dropping $999. During my time away I did sign up for eLearnsecurity PTS course, its an introductory course so does not go that much into depth but I am really enjoying and the content is really high quality, its around $400 which isnt cheap in my expensive but is not as bad as other certification courses. I plan on being more productive and transparent during my go around this time, I may do some videos when I start the course again but for now I will just be updating my github.io blog. 
-
 A list of the resources I have been using as I prepare for the exam
 
-Update: changed wording so that it didnt seem like I already have the certification. My exam is scheduled for the end of December. I also have some more resources that I have found helpful since the last update. I will be adding those sometime this week
+ 
+ # OSCP Blogs/Plans/Reviews/Prep
+Blogs that give opinions and thoughts about taking, preparing and methodolgy for taking the OSCP exam. 
 
-  # OSCP Experience
-This are the blogs I have found that have given me a good direction to start as I prepared for the course
+https://medium.com/@galolbardes/passing-the-oscp-while-working-full-time-29cb22d622e0
+
+https://411hall.github.io/OSCP-Preparation/
+
+https://medium.com/@falconspy/passing-oscp-exam-attempt-3-efce6b0d6f6c
+
+https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html
+
+https://erkanaksoy.github.io/OSCP-Guide/
+
+https://sushant747.gitbooks.io/total-oscp-guide/content/
+
+https://refabr1k.gitbook.io/oscp/
+
+https://medium.com/@falconspy/useful-oscp-notes-commands-d71b5eda7b02
 
 https://www.hacksplaining.com/
 
@@ -20,16 +33,51 @@ https://localhost.exposed/path-to-oscp/
 
 https://pinboard.in/u:unfo/t:oscp
 
-# The Basics - Start Here
-these are the resources I used to get more comfortable with linux, scripting, TCP/IP, etc. I recommend starting with these especially if you dont have much/any experience
 
-https://pentesterlab.com/bootcamp
+# Official Offensive Security Information
 
-http://www.penguintutor.com/linux/basic-network-reference
+https://help.offensive-security.com/hc/en-us/articles/360050473812
 
-https://www.cybrary.it/course/advanced-penetration-testing/
+https://www.offensive-security.com/offsec/pwk-oscp-faq/#:~:text=What%20tools%20can%20I%20use,view%20the%20exam%20support%20page.
 
-https://tulpasecurity.files.wordpress.com/2016/09/tulpa-pwk-prep-guide1.pdf
+https://help.offensive-security.com/hc/en-us/articles/360046787731-Penetration-Testing-with-Kali-Linux-Reporting
+
+https://www.offensive-security.com/metasploit-unleashed/
+
+https://www.kali.org/penetration-testing-with-kali-linux/
+
+# Youtube videos
+
+https://www.youtube.com/playlist?list=PLidcsTyj9JXK-fnabFLVEvHinQ14Jy5tf
+
+https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA
+
+# Note Taking & Text Editor
+
+https://github.com/giuspen/cherrytree
+
+https://vim.rtorr.com/ - Vim
+
+# Practive Platforms VM's etc
+
+https://www.vulnhub.com/
+
+https://tryhackme.com/
+
+https://www.hackthebox.eu/
+
+https://www.virtualhackinglabs.com/
+
+# Practice VM lists
+
+https://docs.google.com/spreadsheets/u/0/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview
+
+https://i.redd.it/ha32rd930hg51.png
+
+# SCANNING
+
+https://github.com/Tib3rius/AutoRecon
+
 
 # Metasploit 
 although it has been said that Metasploit use is limited during the exam, Offensive Security recommends getting more familiar with Metasploit. I have been going through the metasploit unleashed course its really good info, i would be suprised if I dont have to come back to this repeatedly
@@ -86,7 +134,5 @@ https://www.tunnelsup.com/metasploit-cheat-sheet/
 
 http://resources.infosecinstitute.com/icmp-reverse-shell/#gref
 
-# Text Editor Cheat Sheets
 
-https://vim.rtorr.com/ - Vim
 
