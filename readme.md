@@ -1,5 +1,5 @@
 # General Advice/Recommendations
-These are points which I thought were usefule which have been taken from various blogs and articles listed in the OSCP-resources file under Blogs.
+These are points which I thought were useful which have been taken from various blogs and articles listed in the OSCP-resources file under Blogs.
 
 - Offensive Security has restricted the following tools: Commercial tools or services (Metasploit Pro, Burp Pro, etc.), Automatic exploitation tools (e.g. db_autopwn, browser_autopwn, SQLmap, SQLninja etc.), Mass vulnerability scanners (e.g. Nessus, NeXpose, OpenVAS, Canvas, Core Impact, SAINT, etc.), Features in other tools that utilize either forbidden or restricted exam limitations
 
