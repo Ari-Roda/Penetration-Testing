@@ -872,73 +872,73 @@ Table of Contents
 
 24.3.1      Enumeration
 
-24.3.2      Attempting to Exploit the Database
+## 24.3.2      Attempting to Exploit the Database
 
-24.4     Deeper Enumeration of the Web Application Server
+## 24.4     Deeper Enumeration of the Web Application Server
 
-24.4.1      More Thorough Post Exploitation
+## 24.4.1      More Thorough Post Exploitation
 
-24.4.2      Privilege Escalation
+## 24.4.2      Privilege Escalation
 
-24.4.3      Searching for DB Credentials
+## 24.4.3      Searching for DB Credentials
 
-24.5     Targeting the Database Again
+## 24.5     Targeting the Database Again
 
-24.5.1      Exploitation
+## 24.5.1      Exploitation
 
-24.5.2      Post-Exploitation Enumeration
+## 24.5.2      Post-Exploitation Enumeration
 
-24.5.3      Creating a Stable Reverse Tunnel
+## 24.5.3      Creating a Stable Reverse Tunnel
 
 
-24.6     Targeting Poultry
+## 24.6     Targeting Poultry
 
-24.6.2      Enumeration
+## 24.6.2      Enumeration
 
-24.6.3      Exploitation (Or Just Logging In)
+## 24.6.3      Exploitation (Or Just Logging In)
 
-24.6.4      Post-Exploitation Enumeration
+## 24.6.4      Post-Exploitation Enumeration
 
-24.6.5      Unquoted Search Path Exploitation
+## 24.6.5      Unquoted Search Path Exploitation
 
-24.6.6      Post-Exploitation Enumeration
+## 24.6.6      Post-Exploitation Enumeration
 
-24.7     Internal Network Enumeration
+## 24.7     Internal Network Enumeration
 
-24.7.1      Reviewing the Results
+## 24.7.1      Reviewing the Results
 
-24.8     Targeting the Jenkins Server
+## 24.8     Targeting the Jenkins Server
 
-24.8.1      Application Enumeration
+## 24.8.1      Application Enumeration
 
-24.8.2      Exploiting Jenkins
+## 24.8.2      Exploiting Jenkins
 
-24.8.3      Post Exploitation Enumeration
+## 24.8.3      Post Exploitation Enumeration
 
-24.8.4      Privilege Escalation
+## 24.8.4      Privilege Escalation
 
-24.8.5      Post Exploitation Enumeration
+## 24.8.5      Post Exploitation Enumeration
 
-24.9     Targeting the Domain Controller
+## 24.9     Targeting the Domain Controller
 
-24.9.1      Exploiting the Domain Controller
+## 24.9.1      Exploiting the Domain Controller
 
-24.10       Wrapping Up
+## 24.10       Wrapping Up
 
 # 25        Trying Harder: The Labs
 
-25.1     Real Life Simulations
+## 25.1     Real Life Simulations
 
-25.2     Machine Dependencies
+## 25.2     Machine Dependencies
 
-25.3     Cloned Lab Machines
+## 25.3     Cloned Lab Machines
 
-25.4     Unlocking Networks
+## 25.4     Unlocking Networks
 
-25.5     Routing
+## 25.5     Routing
 
-25.6     Machine Ordering & Attack Vectors
+## 25.6     Machine Ordering & Attack Vectors
 
-25.7     Firewall / Routers / NAT
+## 25.7     Firewall / Routers / NAT
 
-25.8     Passwords
+## 25.8     Passwords
