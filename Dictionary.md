@@ -5,6 +5,6 @@ https://blog.cobaltstrike.com/2013/06/28/staged-payloads-what-pen-testers-should
 
 
 
-Downloader : A "downloader" downloads a second stage (usually some kind of malware) which requires a network connection.
+<b>Downloader</b> : A "downloader" downloads a second stage (usually some kind of malware) which requires a network connection.
 
-Dropper : A dropper means the malware drops something on the system that wasn't there before (like an executable). Often this is embedded in the original file but could also be downloaded.
+<b>Dropper</b> : A dropper means the malware drops something on the system that wasn't there before (like an executable). Often this is embedded in the original file but could also be downloaded.
