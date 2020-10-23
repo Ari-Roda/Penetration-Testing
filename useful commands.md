@@ -1,5 +1,28 @@
 Commands/tools used frequently
 
+# AWK
+
+```awk 'NR=[LineNumber]' <file>``` : Get that line of file
+
+# FIND
+
+```find / -name flag* | grep "password"``` : Find files in / directory called flag with any character afterwards. and grep those files for password.
+
+# GREP
+
+```grep -rnw <directory> -e <string>``` 
+
+```grep -r /dev -e '4bceb.\{27\}'``` : String starting with 4bceb of length 32. (len(4bceb) + 27 = 32)
+
+```grep -- <-n>``` : Grepping a string with dash (such as -n) needs double dash first. 
+
+*-r : Recursive, read  all  files under each directory
+*-w : Select only those lines containing matches that form  whole words.  The test is that the matching substring must either be at the beginning of the line, or preceded by a  non-word constituent character.  Similarly, it must be either at the end of the line  or  followed  by  a  non-word  constituent character.    Word-constituent   characters   are  letters, digits, and the underscore.  This option has no  effect  if -x is also specified.
+*-a : Process  a  binary  file  as  if  it  were  text
+*-i : Ignore  case  distinctions
+*-e : Interpret pattern as an extended regular expression
+
+
 # NMAP 
 
 ```nmap <IP> -sU``` : Nmap UDP scan 
