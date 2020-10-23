@@ -46,7 +46,7 @@ display the last few lines of a file ```tail file.txt```
 ```Python3 -m pyftpdlib -p 21 -w``` : Spins up a Python 3.X FTP server in the directory you are located on port 21 and it allows anonymous login access.
 
 # Wfuzz
-Web application bruteforcer it can be used for finding resources not linked directories, servlets, scripts, etc, bruteforce GET and POST parameters for checking different kind of injections
+Web application bruteforcer it can be used for finding resources not linked directories, servlets, scripts, etc, bruteforce GET and POST parameters for checking different kind of injections. https://wfuzz.readthedocs.io/en/latest/index.html
 
 ```wfuzz -c -z file,/usr/share/wordlists/dirb/big.txt --hc 404 http://192.168.1.1/FUZZ/ > output.txt``` 
 * -c : Shows the output in color, 
