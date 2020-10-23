@@ -49,9 +49,9 @@ display the last few lines of a file ```tail file.txt```
 Web application bruteforcer it can be used for finding resources not linked directories, servlets, scripts, etc, bruteforce GET and POST parameters for checking different kind of injections
 
 ```wfuzz -c -z file,/usr/share/wordlists/dirb/big.txt --hc 404 http://192.168.1.1/FUZZ/ > output.txt``` 
--c Shows the output in color, 
--z Specifies what will replace FUZZ in the request. For example -z file,big.txt will read through all the lines of big.txt and replace FUZZ with, 
---hc Don't show certain http response codes
+* -c Shows the output in color, 
+* -z Specifies what will replace FUZZ in the request. For example -z file,big.txt will read through all the lines of big.txt and replace FUZZ with, 
+* --hc Don't show certain http response codes
 
 sudo apt-get install wfuzz
 pip3 install wfuzz
