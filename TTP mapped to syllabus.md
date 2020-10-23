@@ -4,19 +4,19 @@ Table of Contents
 
 # 1      Penetration Testing with Kali Linux: General Course Information
 
-1.1       About The PWK Course
+## 1.1       About The PWK Course
 
-1.1.1        PWK Course Materials
+## 1.1.1        PWK Course Materials
 
-1.1.2        Access to the Internal VPN Lab Network
+## 1.1.2        Access to the Internal VPN Lab Network
 
-1.1.3        The Offensive Security Student Forum
+## 1.1.3        The Offensive Security Student Forum
 
-1.1.4        Live Support
+## 1.1.4        Live Support
 
-1.1.5        OSCP Exam Attempt
+## 1.1.5        OSCP Exam Attempt
 
-1.2       Overall Strategies for Approaching the Course
+## 1.2       Overall Strategies for Approaching the Course
 
 1.2.1        Welcome and Course Information Emails
 
