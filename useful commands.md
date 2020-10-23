@@ -8,6 +8,20 @@ Commands/tools used frequently
 
 ```find / -name flag* | grep "password"``` : Find files in / directory called flag with any character afterwards. and grep those files for password.
 
+```find / -perm -u=s -type f 2>/dev/null``` : Find files with SUID bit set (-g=s SGID, for set group id) in / send errors to null.
+
+# Google Dorks
+
+```site:<sitename> 'word'``` : Search within particular site
+
+```filetype:pdf``` : Search for particular filetype
+
+```cache:<sitename>``` : View cached version
+  
+```intitle:<phrase>``` : Appears in title
+
+```eg intitle:index of``` 
+
 # GREP
 
 ```grep -rnw <directory> -e <string>``` 
