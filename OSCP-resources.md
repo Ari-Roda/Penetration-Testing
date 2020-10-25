@@ -13,6 +13,8 @@ https://medium.com/@falconspy/passing-oscp-exam-attempt-3-efce6b0d6f6c
 
 https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html
 
+https://cd6629.gitbook.io/oscp-notes/converting-metasploit-modules-to-python/intro-to-x86-64-tryhackme
+
 https://erkanaksoy.github.io/OSCP-Guide/
 
 https://sushant747.gitbooks.io/total-oscp-guide/content/
