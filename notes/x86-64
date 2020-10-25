@@ -1,0 +1,125 @@
+Before an exe file is made its compiled into assembly(.s files) and subsequently assembled into object programs(.o files) and a linker finally makes it executable.
+
+radar2 : RE framework, analyze/dissassemble binaries, turn machine code back to readable assembly
+
+r2 -d <program> : open program in debugging mode
+
+aa : analyze the program
+
+aaa : analyze all flags
+
+? : help
+
+afl : list functions 
+
+pdf @<function> : examine function
+
+Since the architecture is x86-64, the registers are 64 bit and Intel has a list of 16 registers:
+
+
+64 bit/32 bit registers
+
+%rax : general purpose registers
+
+%eax : general purpose registers
+
+%rbx : general purpose registers
+
+%ebx : general purpose registers
+
+%rcx : general purpose registers
+
+%ecx : general purpose registers
+
+%rdx
+
+%edx
+
+%rsi
+
+%esi
+
+%rdi
+
+%edi
+
+%rsp : stack pointer points to the top of the stack which contains the most recent memory address
+
+%esp
+
+%rbp : frame pointer points to currently executed frame
+
+%ebp
+
+%r8
+
+%r8d
+
+%r9
+
+%r9d
+
+%r10
+
+%r10d
+
+%r11
+
+%r11d
+
+%r12
+
+%r12d
+
+%r13
+
+%r13d
+
+%r14
+
+%r14d
+
+%r15
+
+%r15d
+
+movq $9 rbx : transfer 9 to rbx
+
+movq %rbx %ebx : moving values between registers
+
+movq %rbx (%ebx) : move value stored in %rbx to memory location represented by %ebx
+
+addq : addition
+
+subq : sutraction
+
+imulq : multiplication
+
+salq : shifting left
+
+sarq : shifitng right
+
+xorq : xoring
+
+cmpq : a-b used like if statement
+
+testq : a&b used like if statement
+
+jmp : jump to location
+
+various jumps such as je, jne (jump if equal, jump if not equal and more)
+
+popq : pop value off stack and read it and return to current instruction
+
+db <memory location> : breakpoint
+
+ds : continue after breakpoint
+
+dc : start program execution
+
+dr : show register values
+
+rax is the 64 bit version of eax
+
+px @rbp-0x4 : show variable values
+
