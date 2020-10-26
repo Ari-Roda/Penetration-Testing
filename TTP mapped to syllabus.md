@@ -476,7 +476,6 @@ Table of Contents
 
 10.2.3      Navigating Code
 
-
 10.2.4      Overflowing the Buffer
 
 10.2.5      Exercises
