@@ -41,4 +41,12 @@ the binary information is represented in hexadecimal format. Different architect
 Little Endian is where the value is arranged from the least significant byte to the most significant byte LSB 78 56 34 12 MSB.
 Big Endian is where the value is arranged from the most significant byte to the least significant byte MSB 12 34 56 78 LSB.
 
+using gdb
+buffer overflows task7 thm
 
+find how much characters are needed to get a segmentation fault on program. eg. at 14 program runs normal, at 15 segmentation fault occurs because you are going over into next part of stack. If you can see the program source you can see this from variables being set and what their length is. 
+Once you know how much to overwrite variable can then find out how much space haveto put an address. 
+Can do this by using gdb and overwriting buffer to 14 and then put A and the program should go to 41. This happens because you have overwritten buffer and its now going to the address you set which is A (which equals 41). You can increment A by one until you find out how big the buffer is. eg you will keep going to address 0x00414141 (AAA) until eventuall you jump out to completely different address.
+This gives you the amount of space you have to put the address you want it to return to. Therefore if it jumps out at 20 we have 14 to fill the variables space and then 6 the address.
+find the address you want to go to using radare2 or gdb change it to little endian and then convert to ascii to repliacete some character sequence in ascii like control characters you have to do ctrl + shift + something (cant copy paste).
+you can then run the program in gdb and fill the variable space with data and put the ascii converted address in the rest of the space.
