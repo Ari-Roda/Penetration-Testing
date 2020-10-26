@@ -10,6 +10,22 @@ Commands/tools used frequently
 
 ```find / -perm -u=s -type f 2>/dev/null``` : Find files with SUID bit set (-g=s SGID, for set group id) in / send errors to null.
 
+# GDB
+
+gdb <program-name> : Start gdb with program
+
+set exec-wrapper env -u LINES -u COLUMNS : any exploit you make inside gdb will work outside of gdb after doing this.
+
+run : run program
+
+info functions : list functions
+
+disassemble <function> : show function (same as radare 2 pdf @<function> 
+  
+b * main+39 : put breakpoint at main funciton + 39 (numbers shown when you do info function.)
+
+
+
 # Google Dorks
 
 ```site:<sitename> 'word'``` : Search within particular site
