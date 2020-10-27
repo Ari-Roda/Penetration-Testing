@@ -50,3 +50,37 @@ Can do this by using gdb and overwriting buffer to 14 and then put A and the pro
 This gives you the amount of space you have to put the address you want it to return to. Therefore if it jumps out at 20 we have 14 to fill the variables space and then 6 the address.
 find the address you want to go to using radare2 or gdb change it to little endian and then convert to ascii to repliacete some character sequence in ascii like control characters you have to do ctrl + shift + something (cant copy paste).
 you can then run the program in gdb and fill the variable space with data and put the ascii converted address in the rest of the space.
+
+#######################################################################
+
+When a function calls another function, it needs to add the return address on the stack so the callee function knows where to transfer control to once it has finished executing. Data will be copied upwards from buffer[0] to buffer[n]. Since we can overflow the buffer, it also follows that we can overflow the return address with our own value. We can control where the function returns and change the flow of execution of a program.
+
+shell code quite literally is code that will open up a shell. More specifically, it is binary instructions that can be executed. Since shellcode is just machine code(in the form of binary instructions), you can usually start off by writing a C program to do what you want, compile it into assembly and extract the hex characters. This shellcode opens up a basic shell:
+
+\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05
+
+The basic idea is that we need to point the overwritten return address to the shellcode, but where do we actually store the shellcode and what actual address do we point it at? Why don’t we store the shellcode in the buffer - because we know the address at the beginning of the buffer, we can just overwrite the return address to point to the start of the buffer.
+
+*Find out the address of the start of the buffer and the start address of the return address
+
+*Calculate the difference between these addresses so you know how much data to enter to overflow
+
+*Start out by entering the shellcode in the buffer, entering random data between the shellcode and the return address, and the address of the buffer in the return address
+
+In theory, this looks like it would work quite well. However, memory addresses may not be the same on different systems, even across the same computer when the program is recompiled. So we can make this more flexible using a NOP instruction. A NOP instruction is a no operation instruction - when the system processes this instruction, it does nothing, and carries on execution. A NOP instruction is represented using \x90. Putting NOPs as part of the payload means an attacker can jump anywhere in the memory region that includes a NOP and eventually reach the intended instructions. This is what an injection vector would look like:
+
+|NOP block |SHELL code|Memory Address|
+
+You’ve probably noticed that shellcode, memory addresses and NOP sleds are usually in hex code. To make it easy to pass the payload to an input program, you can use python:
+
+python -c “print (NOP * no_of_nops + shellcode + random_data * no_of_random_data + memory address)”
+
+Using this format would be something like this for this challenge:
+
+python -c “print(‘\x90’ * 30 +‘\x48\xb9\x2f\x62\x69\x6e\x2f\x73\x68\x11\x48\xc1\xe1\x08\x48\xc1\xe9\x08\x51\x48\x8d\x3c\x24\x48\x31\xd2\xb0\x3b\x0f\x05’+
+
+‘\x41’ * 60 + 
+
+‘\xef\xbe\xad\xde’) | ./program_name
+
+ ”
