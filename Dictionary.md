@@ -8,3 +8,5 @@ https://blog.cobaltstrike.com/2013/06/28/staged-payloads-what-pen-testers-should
 <b>Dropper</b> : A dropper means the malware drops something on the system that wasn't there before (like an executable). Often this is embedded in the original file but could also be downloaded.
 
 <b>proof of concept (PoC)</b> : evidence, typically derived from an experiment or pilot project, which demonstrates that a design concept, business proposal, etc., is feasible.
+
+<b>shell code</b> : quite literally is code that will open up a shell
