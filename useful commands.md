@@ -24,6 +24,7 @@ disassemble function-name : show function (same as radare 2 pdf @<function> )
   
 b * main+39 : put breakpoint at main funciton + 39 (numbers shown when you do info function.)
 
+i r : show registers
 
 
 # Google Dorks
