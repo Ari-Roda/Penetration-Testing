@@ -26,6 +26,14 @@ b * main+39 : put breakpoint at main funciton + 39 (numbers shown when you do in
 
 i r : show registers
 
+step :  step through program
+
+continue : continue program
+
+clear : delete breakpoint
+
+print : print out value or expression
+
 
 # Google Dorks
 
