@@ -34,6 +34,8 @@ clear : delete breakpoint
 
 print : print out value or expression
 
+next : Debugger will execute the next line as single instruction
+
 
 # Google Dorks
 
