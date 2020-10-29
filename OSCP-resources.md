@@ -19,6 +19,12 @@ https://erkanaksoy.github.io/OSCP-Guide/
 
 https://sushant747.gitbooks.io/total-oscp-guide/content/
 
+https://github.com/Tib3rius
+
+https://github.com/sagishahar/lpeworkshop
+
+https://www.udemy.com/course/linux-privilege-escalation-for-beginners/
+
 https://refabr1k.gitbook.io/oscp/
 
 https://medium.com/@falconspy/useful-oscp-notes-commands-d71b5eda7b02
