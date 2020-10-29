@@ -174,6 +174,30 @@ display the last few lines of a file ```tail file.txt```
 
 ```px @ <variable>``` : show memory for entered variable
 
+# Spanning a TTY shell
+
+```python -c 'import pty; pty.spawn("/bin/sh")'```
+
+```echo os.system('/bin/bash')```
+
+```/bin/sh -i```
+
+```perl —e 'exec "/bin/sh";'```
+
+```perl: exec "/bin/sh";```
+
+```ruby: exec "/bin/sh"```
+
+lua: ```os.execute('/bin/sh')```
+
+```exec "/bin/sh"``` : (From within IRB)
+
+```:!bash``` : (From within vi)
+
+```:set shell=/bin/bash:shell``` : (From within vi)
+
+```!sh``` : (From within nmap)
+
 # Web-Server
 
 ```Python -m SimpleHTTPServer 80``` : Spins up a webserver in the directory you are located on port 80.
