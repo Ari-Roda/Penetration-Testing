@@ -4,6 +4,11 @@ Commands/tools used frequently
 
 ```awk 'NR=[LineNumber]' <file>``` : Get that line of file
 
+# CEWL
+CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers
+
+cewl -d 2 -m 5 -w docswords.txt https://example.com
+
 # FIND
 
 ```find / -name flag* | grep "password"``` : Find files in / directory called flag with any character afterwards. and grep those files for password.
