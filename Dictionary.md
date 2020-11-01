@@ -25,3 +25,12 @@ These methods hide the payload from the victim and from researchers that get the
 A completely different approach, which also falls under the umbrella of protectors, is code virtualization, which uses a customized and different virtual instruction set every time you use it to protect your application. Of these protectors there are professional versions that are used in the gaming industry against piracy. But the technique itself has also made its way into malware, more specifically ransomware. Which enables ransomware that doesn’t need a C&C server to communicate the encryption key. The protection is so efficient that the encryption key can be hardcoded into the ransomware. An example is Locky Bart that uses WProtect, an open-source code-virtualization project.
 
 ###########################################################################
+
+Reverse shells are when the target is forced to execute code that connects back to your computer. On your own computer you would use one of the tools mentioned in the previous task to set up a listener which would be used to receive the connection. Reverse shells are a good way to bypass firewall rules that may prevent you from connecting to arbitrary ports on the target; however, the drawback is that, when receiving a shell from a machine across the internet, you would need to configure your own network to accept the shell. This, however, will not be a problem on the TryHackMe network due to the method by which we connect into the network.
+
+Bind shells are when the code executed on the target is used to start a listener attached to a shell directly on the target. This would then be opened up to the internet, meaning you can connect to the port that the code has opened and obtain remote code execution that way. This has the advantage of not requiring any configuration on your own network, but may be prevented by firewalls protecting the target.
+
+Interactive shell: If you've used Powershell, Bash, Zsh, sh, or any other standard CLI environment then you will be used to
+interactive shells. These allow you to interact with programs after executing them. 
+
+Non-Interactive shells don't give you that luxury. In a non-interactive shell you are limited to using programs which do not require user interaction in order to run properly. Unfortunately, the majority of simple reverse and bind shells are non-interactive, which can make further exploitation trickier.
