@@ -1,5 +1,9 @@
 ##########################################
+
 Commands/tools used frequently
+
+##########################################
+
 
 # AWK
 
@@ -201,6 +205,14 @@ display the last few lines of a file ```tail file.txt```
 ```dr``` : show register values
 
 ```px @ <variable>``` : show memory for entered variable
+
+# SCP
+
+
+```scp your_username@remotehost.edu:foobar.txt /some/local/directory``` : Copy the file "foobar.txt" from a remote host to the local host
+
+```scp foobar.txt your_username@remotehost.edu:/some/remote/directory``` : Copy the file "foobar.txt" from the local host to a remote host
+
 
 # Spanning a TTY shell
 
