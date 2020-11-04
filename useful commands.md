@@ -9,6 +9,12 @@ Commands/tools used frequently
 
 ```awk 'NR=[LineNumber]' <file>``` : Get that line of file
 
+# BINWALK
+
+Binwalk is a tool for searching a given binary image for embedded files and executable code.
+
+```binwalk [OPTIONS] [FILE1]```
+
 # CEWL
 CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers
 
@@ -259,4 +265,10 @@ Web application bruteforcer it can be used for finding resources not linked dire
 sudo apt-get install wfuzz
 
 pip3 install wfuzz
+
+# ZIP2JOHN
+
+```zip2john encrypted.zip > encrypted.hash``` : get hashed password out of zip archive.
+
+```john --show encrypted.hash``` : Use john to crack password.
 
