@@ -272,3 +272,10 @@ pip3 install wfuzz
 
 ```john --show encrypted.hash``` : Use john to crack password.
 
+# ZSTEG
+detect stegano-hidden data in PNG & BMP: 
+
+```zsteg [options] filename.png [param_string]```
+
+
+
