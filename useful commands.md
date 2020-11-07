@@ -79,6 +79,14 @@ next : Debugger will execute the next line as single instruction
 *-i : Ignore  case  distinctions
 *-e : Interpret pattern as an extended regular expression
 
+# IP ROUTE
+
+```route``` : show routing table
+
+```ip route show``` : show routes
+
+```sudo ip route add <network-address-cidr-notation> via <gateway> dev <interface-name>``` : add route with this and same command for delete
+
 # MSFVENOM
 
 ## One liner
