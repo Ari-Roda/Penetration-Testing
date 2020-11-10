@@ -20,6 +20,10 @@ CeWL is a ruby app which spiders a given url to a specified depth, optionally fo
 
 cewl -d 2 -m 5 -w docswords.txt https://example.com
 
+# CURL
+
+curl -A "<user-agent-string>" <url> : to set specific user agent through curl
+
 # FIND
 
 ```find / -name flag* | grep "password"``` : Find files in / directory called flag with any character afterwards. and grep those files for password.
