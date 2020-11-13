@@ -23,6 +23,7 @@ Use nmap with the following options:
 -A for detailed information and running some scripts
 
 #####################################################################################################################################
+
 1.
 
 multiple tomcat services. can find tomcat default directory using gobuster/dirb or can research to find default directory including admin panel.
@@ -42,3 +43,7 @@ make listener. for the listener port can use a high port being used by the targe
 
 if you download file with wget will need to remove extension if one was added make it executable chmod +x <file>. then run reverse shell script
   
+#####################################################################################################################################
+
+2.
+
