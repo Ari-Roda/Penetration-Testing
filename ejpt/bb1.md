@@ -47,3 +47,20 @@ if you download file with wget will need to remove extension if one was added ma
 
 2.
 
+use gobuster to find available 
+
+at logins and dashbaords try common credentials first (admin:admin, admin:password etc). then try credentials list with hydra etc dictionary attack.
+
+if you want to continue enumerating a path that has authorization you can do it with dirb/gobuster but need to add the  credentials to the command. eg.
+gobuster dir -u http://172.16.64.140/project/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -U admin -P admin
+
+as you continue finding new paths you should continue enumerating to find new directories and files. if you find information such as file paths or credentials these can be used. if the file path is /var/www/html/... it can be accessed so try that.
+
+#####################################################################################################################################
+
+3.
+
+
+
+
+
