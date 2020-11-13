@@ -60,7 +60,15 @@ as you continue finding new paths you should continue enumerating to find new di
 
 3.
 
+you can find creds on other machine such as ssh
 
 
 
+#####################################################################################################################################
+
+4.
+
+you can find creds on another machine which will give access to another machine or service on the machine. 
+
+for mysql there are various ways to login to mysql services remotely. myssql_login metasplot module is one way but can be done manually, then mssql_enum and mssql_payload to get access. when setting ports for the payload consider what ports can have outbound access like dns and others and also the destination address of the listener.
 
