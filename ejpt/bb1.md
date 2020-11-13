@@ -35,7 +35,7 @@ upload a webshell in this way. have to take into account the language being used
 
 access the webshell either through url or admin panel.
 
-from webshell use uname -m and others to determine which payload to use for reverse shell.
+from webshell use uname -a and others to determine which payload to use for reverse shell.
 
 use webshell to get reverse shell, can use msfvenom, oneliner, downloading it with wget, netcat, socat etc
 
