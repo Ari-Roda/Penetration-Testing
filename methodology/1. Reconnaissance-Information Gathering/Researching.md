@@ -16,4 +16,17 @@
 
 5.Find as many websites owned by the company as possible. Enumerating the main domain may find various subdomains available that contain valuable information. At this stage passive enumeration should be used meaning we do not directly interact with the target. Instead we can use google and other online resources to search for available domains owned by the company. In Google you can use site: company.com to search based on particular domain. Also dnsdumpster.com indexes search sites for information. Sublist3r collects DNS data from various sources. Virustotal lists many of these things in one place also by searching for the domain in question. Crt.sh allows you to search certificates for a site where you can find valid subdomains from them. This can also be done by viewing the certificate of a site through the browser, going to details and certificate subject alternative name. Which can show all subdomains covered by that certificate. Sublister has a built in brute force option which uses a domain list to brute force common subdomain names called names.txt. You can use this one or try another one like dirbuster etc. Be careful that some subdomains will just redirect to the main page and therefore some scans will show it as up when its not of any use to us. amass is another dns enumeration and network mapping tool. snap run amass -ip -d google.com. bruteforicing subdomains takes time so start with passive methods
         
-As you find new sources you repeat the same processes in a cyclid manner to not miss anything.
+As you find new sources you repeat the same processes in a cycle manner to not miss anything.
+
+###################################################################################################################
+
+6. Google dorks : google dorks can be used to find specific resources that are publicly available.
+
+inurl:admin intitle:login site:example.com
+
+this can be linked with AND/OR/& to make it more specific.
+
+
+-inurl: (htm|html|php|asp|jsp) intitle:"index of" "last modified" "parent directory" txt OR doc OR pdf site:.jp
+
+minus can be used to exclude commom extensions, and look for open directory indexes containing a string and txt doc or pdf file in certain tld
