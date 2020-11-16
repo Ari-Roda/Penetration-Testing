@@ -18,7 +18,7 @@ fwrite($fp);
 ```
 ##########################################################################################################
 
-php string to send cookies to above php file. using stored xss when a user visits site with this xss on it will send there cookie to above php code file
+php string to send cookies to above php file. using stored xss when a user visits site with this xss on it will send there cookie to above php code file. could also stand up a simple webserver and send it there.
 
 ##########################################################################################################
 
