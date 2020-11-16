@@ -72,5 +72,5 @@ you can find creds on another machine which will give access to another machine 
 
 for mysql there are various ways to login to mysql services remotely. myssql_login metasplot module is one way but can be done manually, then mssql_enum and mssql_payload to get access. when setting ports for the payload consider what ports can have outbound access like dns and others and also the destination address of the listener.
 
-manual way : mysql -u <username> -p <password> -h <ip>
+manual way : mysql -u username -p password -h ip
 
