@@ -69,6 +69,18 @@ next : Debugger will execute the next line as single instruction
 
 ```eg intitle:index of``` 
 
+# Gobuster
+
+```gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt``` : basic gobuster enumeration
+
+```gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -a <useragent>``` : -a to change useragent used
+
+```gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -p <proxy-url>```  : -p to set a proxy like burpsuite to capture all requests
+
+```gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -P <password> -U <username>```  : username and password for basic authentication
+
+```gobuster dir -u http://192.168.0.155/ -w /usr/share/wordlists/dirb/common.txt -H 'Header1: val1' -H 'Header2: val2'``` : specify custom headers
+
 # GREP
 
 ```grep -rnw <directory> -e <string>``` 
