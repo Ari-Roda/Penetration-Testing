@@ -27,6 +27,6 @@ inurl:admin intitle:login site:example.com
 this can be linked with AND/OR/& to make it more specific.
 
 
--inurl: (htm|html|php|asp|jsp) intitle:"index of" "last modified" "parent directory" txt OR doc OR pdf site:.jp
+intext:credentials -inurl: (htm|html|php|asp|jsp) intitle:"index of" "last modified" "parent directory" txt OR doc OR pdf site:.jp
 
 minus can be used to exclude commom extensions, and look for open directory indexes containing a string and txt doc or pdf file in certain tld
