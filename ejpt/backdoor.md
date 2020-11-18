@@ -12,3 +12,5 @@ this will run ncat at startup
 this can be done through metasploit also and meterpreter to get more features than ncat.
 
 in metasploit the s4u_persistence module gets persistence using an existing session to upload a backdoor and set scheduled task. so you can now startup a new listener and catch the reverse shell when its triggered.
+
+there are various persistence modules, one main one for windows is windows/local/persistence but you have to change the lport to be different to the sessions lport.
