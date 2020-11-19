@@ -95,6 +95,12 @@ next : Debugger will execute the next line as single instruction
 *-i : Ignore  case  distinctions
 *-e : Interpret pattern as an extended regular expression
 
+# HEXEDITOR
+
+To change file magic numbers etc
+
+```hexeditor <file>```
+
 # IP ROUTE
 
 ```route``` : show routing table
