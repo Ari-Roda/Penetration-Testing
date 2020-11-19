@@ -15,6 +15,11 @@ Binwalk is a tool for searching a given binary image for embedded files and exec
 
 ```binwalk [OPTIONS] [FILE1]```
 
+```binwalk -e [FILE1]``` : extract file
+
+```binwalk -Me [FILE1]``` : recursively extract files
+
+
 # CEWL
 CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers
 
