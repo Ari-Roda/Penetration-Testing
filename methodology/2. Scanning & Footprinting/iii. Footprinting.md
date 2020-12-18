@@ -19,3 +19,6 @@ httprint -P0 -h <target host> -s <signature file> : -P0 no pings
 one of the first things to do for web servers is to check what http verbs it allows. using the options verb you can find if it allows PUT or DELETE which may be able to be exploited.
 
 exploiting PUT may allow you to get a reverse shell by putting a PE on the target byt the PUT verb requires you to know the size of the file which can be done with linux command  wc -m <file>.
+
+sudo nmap -sV -n -v -Pn -p- -T4 -iL black-box-2-ips.txt -o black-box2-details-2.txt
+
