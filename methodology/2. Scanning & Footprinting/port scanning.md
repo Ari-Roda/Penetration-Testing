@@ -25,3 +25,7 @@ make -j
 ./masscan -p22,80,443,53,3389,8080,445 -Pn --rate=800 --banners ip-range -e tap1 --router-ip <ip>
 
 change . conf file to ouput to file
+
+##########################SSH OPEN PORTS########################################################
+
+connect to ssh to see if the banner has any info which may help
