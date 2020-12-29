@@ -7,6 +7,12 @@ nmap can be used for OS fingerprinting:
 
 ```nmap -sT -O <ip range>``` :tcp connect scan
   
+```nmap -sC -sV <IP>``` : Hits the top 1000 ports of the target and runs basic scripts and banner grabbing — good first step
+  
+```nmap -sC -sV -p- <IP>``` : Scan ALL ~65k ports — Can take A LONG TIME, but can find non-default ports
+  
+```nmap -Pn <IP>``` : Useful if there is a host, but it isn’t responding to normal nmap scans (nmap uses syn pkts by default — these can be blocked)
+  
 nmap can guess upto though service pack version even 
 
 once you have access to the machine a uname -a can be used to check if the OS guess is correct
