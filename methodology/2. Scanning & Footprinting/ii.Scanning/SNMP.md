@@ -1,0 +1,1 @@
+```snmpwalk -c public -v1 IP```
