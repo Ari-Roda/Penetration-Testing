@@ -1,1 +1,1 @@
-```mysql -h IP -u root -p```
+```mysql -u root -h 172.16.64.81 -P 13306 -p```
