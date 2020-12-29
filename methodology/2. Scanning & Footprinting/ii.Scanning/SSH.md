@@ -1,1 +1,1 @@
-```ssh someuser@IP:PORT```
+```ssh someuser@IP -p PORT```
